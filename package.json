@@ -1,0 +1,10 @@
+{
+	"devDependencies": {
+		"concurrently": "^9.2.1"
+	},
+	"name": "taskgrad",
+  	"private": true,
+  	"scripts": {
+    	"dev": "concurrently \"pnpm --filter server dev\" \"pnpm --filter web dev\""
+  	}
+}

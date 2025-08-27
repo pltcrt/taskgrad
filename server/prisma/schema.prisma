@@ -20,4 +20,21 @@ model User {
   charisma    Int     @default(0)
   wealth      Int     @default(0)
   createdAt   DateTime @default(now())
+
+  tasks       Task[]   // ← обратная связь для relation
+}
+
+model Task {
+  id              Int      @id @default(autoincrement())
+  title           String
+  description     String?
+  difficulty      Int      @default(1)
+  attribute       String   // strength, intelligence, spirit, charisma, wealth
+  xpReward        Int      @default(10)
+  goldReward      Int      @default(5)
+  attributeReward Int      @default(1)
+  completed       Boolean  @default(false)
+  userId          Int
+  user            User     @relation(fields: [userId], references: [id])
+  createdAt       DateTime @default(now())
 }
