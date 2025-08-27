@@ -1,0 +1,58 @@
+# ========================
+# Node.js
+# ========================
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+
+# ========================
+# Build / Dist
+# ========================
+dist/
+build/
+
+# ========================
+# Environment variables
+# ========================
+.env
+.env.local
+.env.*.local
+
+# ========================
+# VSCode
+# ========================
+.vscode/
+.history/
+
+# ========================
+# Mac / Windows
+# ========================
+.DS_Store
+Thumbs.db
+
+# ========================
+# Backend / Server
+# ========================
+server/dist/
+server/node_modules/
+server/.env
+
+# ========================
+# Frontend / Web
+# ========================
+web/dist/
+web/node_modules/
+web/.env
+
+# ========================
+# Logs
+# ========================
+logs/
+*.log
+
+# ========================
+# Misc
+# ========================
+*.bak
+*.tmp
